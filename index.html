@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Louis STREIFF - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Louis STREIFF</div>
+    <nav class="nav-links">
+      <a href="#about">À propos</a>
+      <a href="#projects">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="hamburger" aria-label="Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <section class="hero">
+    <h1>Développeur concepteur d'application</h1>
+    <p>Je donne du sens à chaque projet, en alliant rigueur technique et créativité.</p>
+  </section>
+
+  <section id="about">
+    <h2>À propos de moi</h2>
+    <img src="images/PhotoLouis.jpg" alt="Louis STREIFF" class="profile-pic">
+    <p>
+      Développeur autodidacte et passionné, je transforme les idées en solutions logicielles efficaces.
+      Polyvalent, rigoureux et doté d’un excellent relationnel, je m’adapte rapidement aux nouveaux défis techniques et humains.
+      Mon objectif : créer des projets qui allient performance, simplicité et utilité.
+    </p>
+    <h3 class="title-centered">Mes compétences</h3>
+
+    <ul class="skills">
+      <li>C</li>
+      <li>C#</li>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>HTML/CSS</li>
+      <li>Java</li>
+      <li>PHP</li>
+      <li>SQL</li>
+      <li>Ubuntu</li>
+      <li>Git/Github</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Mes Projets principaux</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Jeu du pendu en C</h3>
+        <p>Mon premier projet en C : un jeu du pendu fonctionnel, avec gestion des erreurs et interface en ligne de commande.
+        Ce projet m’a permis de maîtriser les bases de la programmation procédurale et la gestion des fichiers.</p>
+        <p><strong>Technologie :</strong> C</p>
+        <div class="project-links">
+          <a href="projet1.html">Voir le projet</a>
+          <a href="https://github.com/Louis-STREIFF/pendu-" target="_blank">Code source</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Projet ticketing</h3>
+        <p>Projet réalisé en collaboration entre plusieurs fillières du CESI pour réaliser une appli de ticketing</p>
+        <p><strong>Technologies :</strong> Rider, DataGrip</p>
+        <div class="project-links">
+          <a href="projet2.html">Voir le projet</a>
+          <a href="https://github.com/Louis-STREIFF/Ticketing" target="_blank">Code source</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Projet wordpress</h3>
+        <p>Projet réalisé pendant un stage consistant en une extension pour un site wordpress, permet l'ajout/modification d'une base de donnée airtable </p>
+        <p><strong>Technologies :</strong> HTML, CSS, JS, PHP, Local</p>
+        <div class="project-links">
+          <a href="projet3.html">Voir le projet</a>
+          <a href="https://github.com/Louis-STREIFF/Extension-wordpress" target="_blank">Code source</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Me contacter</h2>
+    <p>N’hésite pas à me contacter pour échanger sur un projet ou une collaboration !</p>
+   <div class="social-container">
+  <div class="social-links">
+    <a href="mailto:streiff.louis@gmail.com" class="social-link" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/louis-streiff-266299337/" class="social-link" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/Louis-STREIFF" class="social-link" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="images/CVLouis.pdf" class="social-link" target="_blank" aria-label="Mon CV">
+    <i class="fas fa-user-tie"></i>
+  </a>
+  </div>
+</div>
+
+  </section>
+
+  <footer>
+    <p>© 2025 STREIFF - Portfolio</p>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

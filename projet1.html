@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet Pendu - Louis STREIFF</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Louis STREIFF</div>
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#about">À propos</a>
+      <a href="index.html#projects">Projets</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <button class="hamburger" aria-label="Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <section class="hero">
+    <h1>Projet pendu</h1>
+    <p class="tagline">Mon premier projet, celui qui m'a fait aimer la programmation</p>
+  </section>
+
+  <section class="project-details">
+    <h2>À propos du projet</h2>
+    <img src="assets/projet1.jpg" alt="Capture du projet pendu" class="project-image">
+
+    <div class="project-content">
+      <p>
+        Le pendu, c'est le tout premier code que j'ai écrit en C.
+        J'y ai appris à faire tourner la logique du jeu, gérer les tentatives et afficher le tout dans le terminal.
+        Un projet simple, mais c'est celui qui m'a fait accrocher à la programmation et m'a donné envie de créer toujours plus.
+      </p>
+
+      <h2>Technologie utilisée</h2>
+      <ul class="skills">
+        <li>C</li>
+      </ul>
+
+      <div class="project-links">
+        <a href="https://github.com/Louis-STREIFF/pendu-" target="_blank" class="btn">Code source</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 STREIFF Louis - Portfolio</p>
+  </footer>
+
+  <script>
+    // Menu responsive
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
